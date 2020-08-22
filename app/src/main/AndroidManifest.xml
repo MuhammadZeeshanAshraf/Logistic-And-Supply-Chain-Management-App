@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Auth.AdminLoginActivity"></activity>
+        <activity android:name=".Activities.Admin.AdminDashBoardActivity"></activity>
+        <activity android:name=".Auth.AdminLoginActivity" />
         <activity android:name=".Auth.UserLoginActivity" />
         <activity android:name=".Common.LoginAsActivity" />
         <activity android:name=".OnBoarding.OnBoardingActivity" />
@@ -23,6 +24,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

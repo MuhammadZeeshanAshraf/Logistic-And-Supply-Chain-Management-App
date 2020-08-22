@@ -19,7 +19,7 @@
                 android:layout_height="@dimen/_80sdp">
 
                 <ImageView
-                    android:id="@+id/LoginBack"
+                    android:id="@+id/iv_back"
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -79,7 +79,7 @@
                         app:hintTextColor="@color/colorGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/LoginEmail"
+                            android:id="@+id/AdminEmail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:backgroundTint="@color/colorVeryLightGrey"
@@ -100,9 +100,9 @@
                         app:passwordToggleEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/LoginPassword"
+                            android:id="@+id/AdminPassword"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="44dp"
                             android:backgroundTint="@color/colorVeryLightGrey"
                             android:hint="Password"
                             android:imeOptions="actionNext"
@@ -137,7 +137,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
-                        android:id="@+id/btnLogin"
+                        android:id="@+id/AdminSignIn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -180,7 +180,7 @@
             android:layout_height="match_parent">
 
             <com.github.ybq.android.spinkit.SpinKitView
-                android:id="@+id/LoadingBar"
+                android:id="@+id/AdminLoadingBar"
                 style="@style/SpinKitView.Large.Wave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
