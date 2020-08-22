@@ -2,17 +2,95 @@ package com.example.logisticandsupplychainmanagementsystem.Activities.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.logisticandsupplychainmanagementsystem.R;
 import com.example.logisticandsupplychainmanagementsystem.Utils.UtilsFunctions;
+import com.example.logisticandsupplychainmanagementsystem.databinding.ActivityAdminDashBoardBinding;
 
 public class AdminDashBoardActivity extends AppCompatActivity {
 
+    ActivityAdminDashBoardBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         UtilsFunctions.hideStatusBar(this);
-        setContentView(R.layout.activity_admin_dash_board);
+        binding = ActivityAdminDashBoardBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        setListener();
+    }
+
+    private void setListener()
+    {
+        binding.AddCategory.setOnClickListener(view -> {
+
+        });
+
+        binding.ManageCategories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        binding.AddProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        binding.ManageProducts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        binding.AddDriver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        binding.ManageDrivers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+
+        binding.ViewOrders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+
+        binding.OrderStatus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+    }
+
+    public void SendUserToActivity(Activity activity)
+    {
+        Intent intent = new Intent(AdminDashBoardActivity.this , activity.getClass());
+        startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }

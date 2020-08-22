@@ -86,7 +86,7 @@
                     android:weightSum="100">
 
                     <LinearLayout
-                        android:id="@+id/ll_add_canteen"
+                        android:id="@+id/AddCategory"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -131,7 +131,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/ll_manage_canteen"
+                        android:id="@+id/ManageCategories"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -186,7 +186,7 @@
                     android:weightSum="100">
 
                     <LinearLayout
-                        android:id="@+id/ll_add_student"
+                        android:id="@+id/AddProduct"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -231,7 +231,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/ll_manage_student"
+                        android:id="@+id/ManageProducts"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -286,7 +286,7 @@
                     android:weightSum="100">
 
                     <LinearLayout
-                        android:id="@+id/ll_add_bal"
+                        android:id="@+id/AddDriver"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -331,7 +331,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/ll_withdraw_bal"
+                        android:id="@+id/ManageDrivers"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -386,6 +386,7 @@
                     android:weightSum="100">
 
                     <LinearLayout
+                        android:id="@+id/ViewOrders"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"
@@ -430,6 +431,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/OrderStatus"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="50"

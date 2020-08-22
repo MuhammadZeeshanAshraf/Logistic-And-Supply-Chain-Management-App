@@ -21,7 +21,6 @@ public class LoginAsActivity extends AppCompatActivity {
         UtilsFunctions.hideStatusBar(this);
         binding = ActivityLoginAsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         setListener();
     }
 
