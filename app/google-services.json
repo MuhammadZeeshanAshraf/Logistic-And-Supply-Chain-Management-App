@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "853157727427",
+    "firebase_url": "https://logistic-and-supply-chain-mana.firebaseio.com",
+    "project_id": "logistic-and-supply-chain-mana",
+    "storage_bucket": "logistic-and-supply-chain-mana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853157727427:android:b4b13327771c899eb32676",
+        "android_client_info": {
+          "package_name": "com.example.logisticandsupplychainmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853157727427-uj6l9vh60d2ie2outhqc1vvdidedil6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.logisticandsupplychainmanagementsystem",
+            "certificate_hash": "48c94d8c2d6b2fb7658e3391063eded5acc8c31d"
+          }
+        },
+        {
+          "client_id": "853157727427-09epu3vggfm9j03edlv4anjouqg8nmf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ciFt2JRRNIa10gIZq5TqnLbXayyTPSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853157727427-09epu3vggfm9j03edlv4anjouqg8nmf9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

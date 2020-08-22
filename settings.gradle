@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Logistic And Supply Chain Management System"
