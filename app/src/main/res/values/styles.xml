@@ -18,4 +18,12 @@
         <!--  For Custom Action Mode Background Color/Drawable -->
         <item name="actionModeBackground">@color/md_grey_300</item>
     </style>
+
+    <style name="blackCompatiable" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/md_grey_900</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/md_grey_900</item>
+        <item name="android:textColorHint">@color/md_grey_900</item>
+    </style>
 </resources>

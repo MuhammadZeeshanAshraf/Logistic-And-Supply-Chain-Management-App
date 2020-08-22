@@ -27,7 +27,7 @@ public class AdminDashBoardActivity extends AppCompatActivity {
     private void setListener()
     {
         binding.AddCategory.setOnClickListener(view -> {
-
+            SendUserToActivity(new AddCategoryActivity());
         });
 
         binding.ManageCategories.setOnClickListener(new View.OnClickListener() {

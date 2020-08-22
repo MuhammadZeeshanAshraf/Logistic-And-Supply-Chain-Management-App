@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.User.UserDashBoardActivity"></activity>
+        <activity android:name=".Activities.Admin.AddCategoryActivity"></activity>
+        <activity android:name=".Activities.User.UserDashBoardActivity" />
         <activity android:name=".Auth.UserSignUpActivity" />
         <activity android:name=".Activities.Admin.AdminDashBoardActivity" />
         <activity android:name=".Auth.AdminLoginActivity" />
