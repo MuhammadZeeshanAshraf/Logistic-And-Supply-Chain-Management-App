@@ -33,13 +33,14 @@ public class AdminDashBoardActivity extends AppCompatActivity {
         binding.ManageCategories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                SendUserToActivity(new ManageCategoriesActivity());
             }
         });
 
         binding.AddProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SendUserToActivity(new AddProductActivity());
 
             }
         });

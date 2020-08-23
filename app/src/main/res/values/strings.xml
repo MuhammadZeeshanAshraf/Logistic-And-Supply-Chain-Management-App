@@ -20,4 +20,7 @@
     <string name="back">back</string>
     <string name="sign_in">Sign In</string>
     <string name="add_category">Add Category</string>
+    <string name="name">Name</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="add_product">Add Product</string>
 </resources>

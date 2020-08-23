@@ -1,20 +1,20 @@
 package com.example.logisticandsupplychainmanagementsystem.Activities.Admin;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.logisticandsupplychainmanagementsystem.Models.Category;
 import com.example.logisticandsupplychainmanagementsystem.R;
 import com.example.logisticandsupplychainmanagementsystem.Utils.UtilsFunctions;
 import com.example.logisticandsupplychainmanagementsystem.databinding.ActivityAddCategoryBinding;
+import com.example.logisticandsupplychainmanagementsystem.databinding.ActivityEditCategoryBinding;
 import com.github.ybq.android.spinkit.style.Wave;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -24,22 +24,25 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AddCategoryActivity extends AppCompatActivity {
-    ActivityAddCategoryBinding binding;
-    DatabaseReference rootRef;
+public class EditCategoryActivity extends AppCompatActivity {
 
+    ActivityEditCategoryBinding binding;
+    DatabaseReference rootRef;
+    Category model;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        binding = ActivityAddCategoryBinding.inflate(getLayoutInflater());
+        binding = ActivityEditCategoryBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         init();
         setListener();
     }
 
     private void init() {
+        Intent i = getIntent();
+        model = (Category) i.getSerializableExtra("Category");
+        binding.catName.setText(model.getName());
         rootRef = FirebaseDatabase.getInstance().getReference();
         Wave wave = new Wave();
         binding.LoadingBar.setIndeterminateDrawable(wave);
@@ -62,26 +65,24 @@ public class AddCategoryActivity extends AppCompatActivity {
             final String name = binding.catName.getText().toString();
             if (TextUtils.isEmpty(name)) {
                 UtilsFunctions.setError(binding.catName, "Name of Category Required");
-                UtilsFunctions.showShortToastError(AddCategoryActivity.this, "Enter the name of category to be added.");
+                UtilsFunctions.showShortToastError(EditCategoryActivity.this, "Enter the name of category to be added.");
             } else {
                 binding.LoadingBar.setVisibility(View.VISIBLE);
-                DatabaseReference userKeyRef = rootRef.child("Categories").push();
 
-                final String PushID = userKeyRef.getKey();
                 Map MessageMap = new HashMap<>();
-                MessageMap.put("ID", PushID);
+                MessageMap.put("ID", model.getId());
                 MessageMap.put("Name", name);
 
-                rootRef.child("Categories").child(PushID).updateChildren(MessageMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                rootRef.child("Categories").child(model.getId()).updateChildren(MessageMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
 
                         if (task.isSuccessful()) {
-                            UtilsFunctions.showShortToastInfo(AddCategoryActivity.this, "Category added successfully...!");
+                            UtilsFunctions.showShortToastInfo(EditCategoryActivity.this, "Category edited successfully...!");
                             finish();
                         } else {
                             binding.LoadingBar.setVisibility(View.GONE);
-                            UtilsFunctions.showShortToastWarning(AddCategoryActivity.this, "Some Problem happen will adding Category...!");
+                            UtilsFunctions.showShortToastWarning(EditCategoryActivity.this, "Some Problem happen will editing Category...!");
 
                         }
                     }
@@ -89,9 +90,13 @@ public class AddCategoryActivity extends AppCompatActivity {
             }
         } catch (Exception e) {
             binding.LoadingBar.setVisibility(View.GONE);
-            UtilsFunctions.showShortToastWarning(AddCategoryActivity.this, "Some Problem happen will adding Category...!");
+            UtilsFunctions.showShortToastWarning(EditCategoryActivity.this, "Some Problem happen will editing Category...!");
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }
