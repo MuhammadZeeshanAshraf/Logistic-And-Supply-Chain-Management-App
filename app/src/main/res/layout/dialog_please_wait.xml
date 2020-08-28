@@ -39,7 +39,7 @@
             android:gravity="center"
             android:layout_marginTop="@dimen/_5sdp"
             android:fontFamily="@font/montserratalternates_regular"
-            android:text="Please wait while we are fetching the quiz."
+            android:text="Please wait while we are fetching the data."
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/_12ssp" />
 

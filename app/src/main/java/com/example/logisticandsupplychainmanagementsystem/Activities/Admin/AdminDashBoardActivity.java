@@ -48,7 +48,7 @@ public class AdminDashBoardActivity extends AppCompatActivity {
         binding.ManageProducts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                SendUserToActivity(new ManageProductsActivity());
             }
         });
 

@@ -84,7 +84,7 @@ public class AddProductActivity extends AppCompatActivity {
         binding.CategorySpinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener() {
             @Override
             public void onItemSelected(MaterialSpinner view, int position, long id, Object item) {
-                Toast.makeText(AddProductActivity.this, ""+ item.toString(), Toast.LENGTH_SHORT).show();
+                category = item.toString();
             }
         });
 
