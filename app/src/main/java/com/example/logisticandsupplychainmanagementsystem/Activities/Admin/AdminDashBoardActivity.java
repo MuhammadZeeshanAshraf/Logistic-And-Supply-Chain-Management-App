@@ -55,14 +55,14 @@ public class AdminDashBoardActivity extends AppCompatActivity {
         binding.AddDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                SendUserToActivity(new AddDriverActivity());
             }
         });
 
         binding.ManageDrivers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                SendUserToActivity(new ManageDriverActivity());
             }
         });
 
@@ -70,7 +70,7 @@ public class AdminDashBoardActivity extends AppCompatActivity {
         binding.ViewOrders.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                SendUserToActivity(new ViewStatusActivity());
             }
         });
 
@@ -78,7 +78,7 @@ public class AdminDashBoardActivity extends AppCompatActivity {
         binding.OrderStatus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                SendUserToActivity(new OrderStatusActivity());
             }
         });
     }

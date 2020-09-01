@@ -13,7 +13,11 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Admin.EditProductActivity"></activity>
+        <activity android:name=".Activities.Admin.OrderStatusActivity"></activity>
+        <activity android:name=".Activities.Admin.ViewStatusActivity" />
+        <activity android:name=".Activities.Admin.ManageDriverActivity" />
+        <activity android:name=".Activities.Admin.AddDriverActivity" />
+        <activity android:name=".Activities.Admin.EditProductActivity" />
         <activity android:name=".Activities.Admin.ProductDetailActivity" />
         <activity android:name=".Activities.Admin.ManageProductsActivity" />
         <activity android:name=".Activities.Admin.AddProductActivity" />
