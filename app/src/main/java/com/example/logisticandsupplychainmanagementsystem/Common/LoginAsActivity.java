@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.logisticandsupplychainmanagementsystem.Auth.AdminLoginActivity;
+import com.example.logisticandsupplychainmanagementsystem.Auth.DriverLoginActivity;
 import com.example.logisticandsupplychainmanagementsystem.Auth.UserLoginActivity;
 import com.example.logisticandsupplychainmanagementsystem.R;
 import com.example.logisticandsupplychainmanagementsystem.Utils.UtilsFunctions;
@@ -36,7 +37,7 @@ public class LoginAsActivity extends AppCompatActivity {
         binding.LoginAsDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                UtilsFunctions.SendUserToActivity(LoginAsActivity.this , new DriverLoginActivity());
             }
         });
 

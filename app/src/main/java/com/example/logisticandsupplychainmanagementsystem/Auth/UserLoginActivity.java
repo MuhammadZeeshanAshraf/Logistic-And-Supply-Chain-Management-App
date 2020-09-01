@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 
+import com.example.logisticandsupplychainmanagementsystem.Activities.User.HomeActivity;
 import com.example.logisticandsupplychainmanagementsystem.R;
 import com.example.logisticandsupplychainmanagementsystem.Utils.UtilsFunctions;
 import com.example.logisticandsupplychainmanagementsystem.databinding.ActivityUserLoginBinding;
@@ -28,6 +30,13 @@ public class UserLoginActivity extends AppCompatActivity {
     {
         binding.UserLoginGoToSignUp.setOnClickListener(view -> {
             SendUserToActivity(new UserSignUpActivity());
+        });
+
+        binding.UserSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                UtilsFunctions.SendUserToActivity(UserLoginActivity.this , new HomeActivity());
+            }
         });
     }
 

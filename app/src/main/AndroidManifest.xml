@@ -13,7 +13,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Admin.OrderStatusActivity"></activity>
+        <activity android:name=".Activities.User.HomeActivity" />
+        <activity android:name=".Activities.Admin.OrderStatusActivity" />
         <activity android:name=".Activities.Admin.ViewStatusActivity" />
         <activity android:name=".Activities.Admin.ManageDriverActivity" />
         <activity android:name=".Activities.Admin.AddDriverActivity" />
@@ -46,6 +47,12 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+
+        <activity android:name=".Activities.Driver.DriverProfileActivity" />
+        <activity android:name=".Activities.Driver.DriverDashBoardActivity" />
+        <activity android:name=".Auth.DriverLoginActivity" />
+
     </application>
 
 </manifest>

@@ -40,7 +40,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/item_bg"
                 android:scaleType="fitCenter"
-                android:src="@drawable/add_item"
+                android:src="@drawable/add_product"
                 app:riv_border_color="@color/colorPrimary"
                 app:riv_border_width="3dp"
                 app:riv_corner_radius="20dip"

@@ -23,4 +23,53 @@
     <string name="name">Name</string>
     <string name="edit_category">Edit Category</string>
     <string name="add_product">Add Product</string>
+
+
+    <string name="str_chat">Chat</string>
+    <string name="str_home">Home</string>
+    <string name="str_cart">Cart</string>
+    <string name="str_profile">Profile</string>
+    <string name="str_name">Zeeshan</string>
+    <string name="str_about">About us</string>
+    <string name="str_mail">zeeshan@gmail.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_orders">Order</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="save">Save</string>
+    <string name="billing">Billing</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="postcode">Postcode</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="currency">$</string>
+    <string name="euro">€</string>
+
+    <string name="your_order_is_booked">Your Order is booked. Order ID:</string>
+    <string name="to_track_go_to_your_order_page">To Track, go to your orders page</string>
+    <string name="pending">Pending</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="payment">Payment</string>
+    <string name="order_status">Order Status</string>
+    <string name="order_processing">Processing</string>
+    <string name="order_on_hold">On-Hold</string>
+    <string name="completed_order">Completed</string>
+    <string name="order_cancelled">Canceled</string>
+    <string name="order_refunded">Refunded</string>
+    <string name="order_failder">Failed</string>
+    <string name="order_trash">Trash</string>
+    <string name="order_pending">Pending</string>
+    <string name="remove_from_cart">Remove From Cart</string>
+    <string name="quantity">Quantity</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="looking">I am looking for..</string>
+    <string name="don_t_have_an_account">Don’t have an account? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="find_the_perfect_dessert_for_your_next_meal">Find the perfect item for your shopping.</string>
+    <string name="store">Store</string>
+    <string name="_5650">€5650</string>
+
 </resources>
